@@ -30,8 +30,10 @@ class TeamView(APIView):
         orgs = Team.objects.all()
         app = Team.objects.get(id = '1')
         print(app)
+        print("run")
         apps = Team.objects.filter(id='1')
         print(apps)
+        print("quick")
         dept = request.data
         name = request.data
         unit = Team.objects.filter(dept=dept).last()
